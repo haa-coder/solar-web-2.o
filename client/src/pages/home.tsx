@@ -54,16 +54,16 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-gray-900 bg-white/85 backdrop-blur-sm px-6 py-4 rounded-2xl inline-block shadow-xl">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-gray-900 bg-white/85 backdrop-blur-sm px-6 py-4 rounded-2xl inline-block">
                 Powering a <span className="text-green-600">Greener</span> World
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-800 font-medium bg-white/75 backdrop-blur-sm px-6 py-4 rounded-xl shadow-lg inline-block">
+              <p className="text-xl md:text-2xl mb-8 text-gray-800 font-medium bg-white/75 backdrop-blur-sm px-6 py-4 rounded-xl inline-block">
                 Leading the renewable energy revolution with innovative solar solutions and sustainable technologies since 2007.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-white text-blue-600 hover:bg-yellow-50 hover:text-blue-700 px-8 py-4 text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-200"
+                  className="bg-white text-blue-600 hover:bg-yellow-50 hover:text-blue-700 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200"
                   onClick={() => scrollToSection('calculator')}
                   data-testid="button-solar-quote"
                 >
@@ -72,7 +72,7 @@ export default function Home() {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-2 border-white text-white hover:bg-white/20 hover:border-yellow-400 px-8 py-4 text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-200"
+                  className="border-2 border-white text-white hover:bg-white/20 hover:border-yellow-400 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200"
                   onClick={() => scrollToSection('about')}
                   data-testid="button-learn-more"
                 >
@@ -80,15 +80,15 @@ export default function Home() {
                 </Button>
               </div>
               <div className="mt-12 grid grid-cols-3 gap-8">
-                <div className="text-center bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-lg">
+                <div className="text-center bg-white/80 backdrop-blur-sm p-4 rounded-xl">
                   <div className="text-3xl font-bold text-blue-600" data-testid="text-countries-count">30+</div>
                   <div className="text-gray-700 font-medium">Countries Served</div>
                 </div>
-                <div className="text-center bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-lg">
+                <div className="text-center bg-white/80 backdrop-blur-sm p-4 rounded-xl">
                   <div className="text-3xl font-bold text-green-600" data-testid="text-experience-years">15+</div>
                   <div className="text-gray-700 font-medium">Years Experience</div>
                 </div>
-                <div className="text-center bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-lg">
+                <div className="text-center bg-white/80 backdrop-blur-sm p-4 rounded-xl">
                   <div className="text-3xl font-bold text-orange-600" data-testid="text-projects-count">1000+</div>
                   <div className="text-gray-700 font-medium">Projects Completed</div>
                 </div>
@@ -98,7 +98,7 @@ export default function Home() {
               <img 
                 src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
                 alt="Modern solar panels installation" 
-                className="rounded-2xl shadow-2xl w-full h-auto"
+                className="rounded-2xl w-full h-auto"
                 data-testid="img-hero-solar"
               />
             </div>
@@ -121,7 +121,7 @@ export default function Home() {
               <img 
                 src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
                 alt="Solar energy engineering team" 
-                className="rounded-xl shadow-lg w-full h-auto"
+                className="rounded-xl w-full h-auto"
                 data-testid="img-engineering-team"
               />
             </div>
@@ -177,9 +177,9 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <Card className="card-hover shadow-xl border-0 bg-gradient-to-br from-white to-blue-50">
+            <Card className="card-hover border-0 bg-gradient-to-br from-white to-blue-50">
               <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl flex items-center justify-center mb-4">
                   <CloudSun className="text-white h-8 w-8" />
                 </div>
                 <CardTitle className="text-xl text-blue-700">Solar Panels</CardTitle>
@@ -194,9 +194,9 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="card-hover shadow-xl border-0 bg-gradient-to-br from-white to-green-50">
+            <Card className="card-hover border-0 bg-gradient-to-br from-white to-green-50">
               <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
                   <Battery className="text-white h-8 w-8" />
                 </div>
                 <CardTitle className="text-xl text-green-700">Energy Storage</CardTitle>
@@ -211,9 +211,9 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="card-hover shadow-xl border-0 bg-gradient-to-br from-white to-orange-50">
+            <Card className="card-hover border-0 bg-gradient-to-br from-white to-orange-50">
               <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-4">
                   <Cpu className="text-white h-8 w-8" />
                 </div>
                 <CardTitle className="text-xl text-orange-700">Inverters & Systems</CardTitle>
@@ -230,7 +230,7 @@ export default function Home() {
           </div>
 
           {/* Featured Brands */}
-          <Card className="shadow-lg">
+          <Card className="">
             <CardHeader>
               <CardTitle className="text-2xl text-center">Trusted Solar Brands</CardTitle>
             </CardHeader>
@@ -332,7 +332,7 @@ export default function Home() {
                 <img 
                   src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
                   alt="Sustainable business operations" 
-                  className="rounded-xl shadow-lg w-full h-auto"
+                  className="rounded-xl w-full h-auto"
                   data-testid="img-sustainable-operations"
                 />
               </div>
@@ -359,8 +359,8 @@ export default function Home() {
       <section id="contact" className="py-20 gradient-bg text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-2xl inline-block shadow-lg">Get in Touch</h2>
-            <p className="text-xl text-gray-800 max-w-3xl mx-auto font-medium bg-white/70 backdrop-blur-sm px-6 py-4 rounded-xl shadow-md">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-2xl inline-block">Get in Touch</h2>
+            <p className="text-xl text-gray-800 max-w-3xl mx-auto font-medium bg-white/70 backdrop-blur-sm px-6 py-4 rounded-xl">
               Ready to start your renewable energy journey? Contact our experts for personalized solutions.
             </p>
           </div>
@@ -369,10 +369,10 @@ export default function Home() {
             {/* Contact Information */}
             <div className="mx-auto max-w-4xl">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold mb-8 text-gray-900 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-xl inline-block shadow-md">Contact Information</h3>
+                <h3 className="text-2xl font-bold mb-8 text-gray-900 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-xl inline-block">Contact Information</h3>
                 
                 <div className="grid md:grid-cols-3 gap-8">
-                  <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-lg">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30">
                     <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                       <MapPin className="text-white h-8 w-8" />
                     </div>
@@ -380,7 +380,7 @@ export default function Home() {
                     <p className="text-gray-700 leading-relaxed">Bao'an District<br />Shenzhen, Guangdong Province<br />China</p>
                   </div>
                   
-                  <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-lg">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30">
                     <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                       <Mail className="text-white h-8 w-8" />
                     </div>
@@ -388,7 +388,7 @@ export default function Home() {
                     <p className="text-gray-700 leading-relaxed">info@shengzegroup.com<br />sales@shengzegroup.com</p>
                   </div>
                   
-                  <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-lg">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30">
                     <div className="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                       <Phone className="text-white h-8 w-8" />
                     </div>
@@ -402,21 +402,21 @@ export default function Home() {
 
           {/* Business Hours & Additional Info */}
           <div className="mt-16 grid md:grid-cols-3 gap-8 text-center">
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-lg">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30">
               <div className="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Clock className="h-8 w-8 text-white" />
               </div>
               <h4 className="font-bold mb-3 text-gray-900 text-lg">Business Hours</h4>
               <p className="text-gray-700 leading-relaxed">Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday: 9:00 AM - 3:00 PM</p>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-lg">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30">
               <div className="w-16 h-16 bg-teal-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <MessageCircle className="h-8 w-8 text-white" />
               </div>
               <h4 className="font-bold mb-3 text-gray-900 text-lg">Response Time</h4>
               <p className="text-gray-700 leading-relaxed">We typically respond within<br />24 hours on business days</p>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30 shadow-lg">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30">
               <div className="w-16 h-16 bg-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Languages className="h-8 w-8 text-white" />
               </div>
