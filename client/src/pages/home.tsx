@@ -54,43 +54,71 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-gray-900 bg-white/85 backdrop-blur-sm px-6 py-4 rounded-2xl inline-block shadow-xl">
-                Powering a <span className="text-green-600">Greener</span> World
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-800 font-medium bg-white/75 backdrop-blur-sm px-6 py-4 rounded-xl shadow-lg inline-block">
-                Leading the renewable energy revolution with innovative solar solutions and sustainable technologies since 2007.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  size="lg" 
-                  className="bg-white text-blue-600 hover:bg-yellow-50 hover:text-blue-700 px-8 py-4 text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-200"
-                  onClick={() => scrollToSection('calculator')}
-                  data-testid="button-solar-quote"
-                >
-                  Get Solar Quote
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="border-2 border-white text-white hover:bg-white/20 hover:border-yellow-400 px-8 py-4 text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-200"
-                  onClick={() => scrollToSection('about')}
-                  data-testid="button-learn-more"
-                >
-                  Learn More
-                </Button>
-              </div>
-              <div className="mt-12 grid grid-cols-3 gap-8">
-                <div className="text-center bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                  <div className="text-3xl font-bold text-blue-600" data-testid="text-countries-count">30+</div>
-                  <div className="text-gray-700 font-medium">Countries Served</div>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                  <Button 
+                    size="lg" 
+                    className="w-full bg-blue-600 text-white hover:bg-blue-700 px-6 py-4 text-lg font-semibold"
+                    onClick={() => scrollToSection('calculator')}
+                    data-testid="button-solar-quote"
+                  >
+                    Get Solar Quote
+                  </Button>
                 </div>
-                <div className="text-center bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                  <div className="text-3xl font-bold text-green-600" data-testid="text-experience-years">15+</div>
-                  <div className="text-gray-700 font-medium">Years Experience</div>
+                
+                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                  <Button 
+                    size="lg" 
+                    className="w-full bg-green-600 text-white hover:bg-green-700 px-6 py-4 text-lg font-semibold"
+                    onClick={() => scrollToSection('about')}
+                    data-testid="button-learn-more"
+                  >
+                    Learn More
+                  </Button>
                 </div>
-                <div className="text-center bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-lg">
-                  <div className="text-3xl font-bold text-orange-600" data-testid="text-projects-count">1000+</div>
-                  <div className="text-gray-700 font-medium">Projects Completed</div>
+                
+                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                  <Button 
+                    size="lg" 
+                    className="w-full bg-orange-600 text-white hover:bg-orange-700 px-6 py-4 text-lg font-semibold"
+                    onClick={() => scrollToSection('services')}
+                    data-testid="button-our-services"
+                  >
+                    Our Services
+                  </Button>
+                </div>
+                
+                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                  <Button 
+                    size="lg" 
+                    className="w-full bg-purple-600 text-white hover:bg-purple-700 px-6 py-4 text-lg font-semibold"
+                    onClick={() => scrollToSection('solar')}
+                    data-testid="button-solar-products"
+                  >
+                    Solar Products
+                  </Button>
+                </div>
+                
+                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                  <Button 
+                    size="lg" 
+                    className="w-full bg-teal-600 text-white hover:bg-teal-700 px-6 py-4 text-lg font-semibold"
+                    onClick={() => scrollToSection('contact')}
+                    data-testid="button-contact-us"
+                  >
+                    Contact Us
+                  </Button>
+                </div>
+                
+                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                  <Button 
+                    size="lg" 
+                    className="w-full bg-red-600 text-white hover:bg-red-700 px-6 py-4 text-lg font-semibold"
+                    onClick={() => scrollToSection('about')}
+                    data-testid="button-global-reach"
+                  >
+                    Global Reach
+                  </Button>
                 </div>
               </div>
             </div>
