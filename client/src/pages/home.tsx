@@ -359,8 +359,8 @@ export default function Home() {
       <section id="contact" className="py-20 gradient-bg text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-white drop-shadow-lg">Get in Touch</h2>
-            <p className="text-xl text-white max-w-3xl mx-auto font-medium drop-shadow-md">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900 drop-shadow-lg">Get in Touch</h2>
+            <p className="text-xl text-gray-800 max-w-3xl mx-auto font-medium drop-shadow-md">
               Ready to start your renewable energy journey? Contact our experts for personalized solutions.
             </p>
           </div>
@@ -369,7 +369,7 @@ export default function Home() {
             {/* Contact Information */}
             <div className="mx-auto max-w-4xl">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold mb-8 text-white drop-shadow-lg">Contact Information</h3>
+                <h3 className="text-2xl font-bold mb-8 text-gray-900 drop-shadow-lg">Contact Information</h3>
                 
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30">
