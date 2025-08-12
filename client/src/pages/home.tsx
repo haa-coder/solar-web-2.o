@@ -72,7 +72,7 @@ export default function Home() {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-2 border-white bg-white text-gray-900 hover:bg-white/20 hover:border-yellow-400 hover:text-white px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200"
+                  className="border-2 border-white bg-white text-gray-900 hover:bg-white/20 hover:border-yellow-400 hover:text-yellow-400 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200"
                   onClick={() => scrollToSection('about')}
                   data-testid="button-learn-more"
                 >
