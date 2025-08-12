@@ -54,10 +54,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
-                Powering a <span className="text-green-400">Greener</span> World
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-gray-900 drop-shadow-lg">
+                Powering a <span className="text-green-600">Greener</span> World
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-white font-medium">
+              <p className="text-xl md:text-2xl mb-8 text-gray-800 font-medium drop-shadow-md">
                 Leading the renewable energy revolution with innovative solar solutions and sustainable technologies since 2007.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
