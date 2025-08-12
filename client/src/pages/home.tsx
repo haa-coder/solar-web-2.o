@@ -433,59 +433,29 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <CloudSun className="h-8 w-8 text-green-500" />
                 <span className="text-xl font-bold">Shengze Group</span>
               </div>
               <p className="text-gray-400 mb-4">Powering a greener world through innovative solar solutions and renewable technologies since 2007.</p>
-              <div className="flex space-x-4">
-                <Button variant="ghost" size="icon" className="text-gray-400 hover:text-green-500" data-testid="link-linkedin">
-                  <Linkedin className="h-5 w-5" />
-                </Button>
-                <Button variant="ghost" size="icon" className="text-gray-400 hover:text-green-500" data-testid="link-twitter">
-                  <Twitter className="h-5 w-5" />
-                </Button>
-                <Button variant="ghost" size="icon" className="text-gray-400 hover:text-green-500" data-testid="link-facebook">
-                  <Facebook className="h-5 w-5" />
-                </Button>
-              </div>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><button onClick={() => scrollToSection('solar')} className="text-left hover:text-white transition-colors">Solar Solutions</button></li>
-                <li><button onClick={() => scrollToSection('services')} className="text-left hover:text-white transition-colors">Engineering</button></li>
-                <li><button onClick={() => scrollToSection('services')} className="text-left hover:text-white transition-colors">International Trade</button></li>
-                <li><button onClick={() => scrollToSection('services')} className="text-left hover:text-white transition-colors">Logistics</button></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Company</h4>
+              <h4 className="font-semibold mb-4">Quick Navigation</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><button onClick={() => scrollToSection('about')} className="text-left hover:text-white transition-colors">About Us</button></li>
-                <li><button onClick={() => scrollToSection('contact')} className="text-left hover:text-white transition-colors">Contact</button></li>
-                <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">News</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Resources</h4>
-              <ul className="space-y-2 text-gray-400">
+                <li><button onClick={() => scrollToSection('solar')} className="text-left hover:text-white transition-colors">Solar Solutions</button></li>
+                <li><button onClick={() => scrollToSection('services')} className="text-left hover:text-white transition-colors">Our Services</button></li>
                 <li><button onClick={() => scrollToSection('calculator')} className="text-left hover:text-white transition-colors">Solar Calculator</button></li>
-                <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Downloads</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Support</a></li>
+                <li><button onClick={() => scrollToSection('contact')} className="text-left hover:text-white transition-colors">Contact Us</button></li>
               </ul>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Shengze Group. All rights reserved. | Privacy Policy | Terms of Service</p>
+            <p>&copy; 2024 Shengze Group. All rights reserved.</p>
           </div>
         </div>
       </footer>
