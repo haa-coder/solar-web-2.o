@@ -46,95 +46,68 @@ export default function Home() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-yellow-50 via-white to-blue-50 text-gray-900">
+    <div className="bg-gray-50 text-gray-900">
       <Navigation />
       
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Hero Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1497436072909-f5e4be4d9dd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&h=1440')`
-          }}
-        ></div>
-        
-        {/* Sunny Day Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-yellow-200/30 via-blue-200/20 to-green-200/30"></div>
-        <div className="absolute inset-0 bg-white/10"></div>
-        
-        <div className="relative z-10 container mx-auto px-6 py-20 text-center">
-          {/* Main Hero Content */}
-          <div className="max-w-6xl mx-auto">
-            <h1 className="text-6xl md:text-8xl font-bold mb-8 leading-tight drop-shadow-2xl">
-              <span className="text-white">Powering a </span>
-              <span className="text-yellow-400 drop-shadow-lg">Greener</span>
-              <span className="text-white"> World</span>
-            </h1>
-            <p className="text-2xl md:text-3xl mb-16 max-w-4xl mx-auto leading-relaxed text-white drop-shadow-lg font-medium">
-              Leading the renewable energy revolution with innovative solar solutions and sustainable technologies since 2007
-            </p>
-            
-            {/* Action Buttons in Sunny Theme Boxes */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-20">
-              <div className="bg-white/95 backdrop-blur-md border-2 border-yellow-300/50 rounded-3xl p-8 shadow-2xl hover:shadow-yellow-300/25 hover:bg-yellow-50/95 transition-all duration-300 group transform hover:scale-105">
-                <CloudSun className="w-16 h-16 text-yellow-500 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 drop-shadow-lg" />
+      <section id="home" className="pt-16 gradient-bg text-white min-h-screen flex items-center">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-slide-up">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-gray-900 bg-white/85 backdrop-blur-sm px-6 py-4 rounded-2xl inline-block shadow-xl">
+                Powering a <span className="text-green-600">Greener</span> World
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 text-gray-800 font-medium bg-white/75 backdrop-blur-sm px-6 py-4 rounded-xl shadow-lg inline-block">
+                Leading the renewable energy revolution with innovative solar solutions and sustainable technologies since 2007.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-white font-bold py-4 text-xl rounded-2xl shadow-lg border-2 border-yellow-300"
+                  className="bg-white text-blue-600 hover:bg-yellow-50 hover:text-blue-700 px-8 py-4 text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-200"
                   onClick={() => scrollToSection('calculator')}
                   data-testid="button-solar-quote"
                 >
                   Get Solar Quote
                 </Button>
-              </div>
-              
-              <div className="bg-white/95 backdrop-blur-md border-2 border-green-300/50 rounded-3xl p-8 shadow-2xl hover:shadow-green-300/25 hover:bg-green-50/95 transition-all duration-300 group transform hover:scale-105">
-                <Battery className="w-16 h-16 text-green-500 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 drop-shadow-lg" />
                 <Button 
                   size="lg" 
-                  className="w-full bg-gradient-to-r from-green-400 to-green-500 hover:from-green-500 hover:to-green-600 text-white font-bold py-4 text-xl rounded-2xl shadow-lg border-2 border-green-300"
-                  onClick={() => scrollToSection('solar')}
-                  data-testid="button-solar-products"
+                  variant="outline" 
+                  className="border-2 border-white text-white hover:bg-white/20 hover:border-yellow-400 px-8 py-4 text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-200"
+                  onClick={() => scrollToSection('about')}
+                  data-testid="button-learn-more"
                 >
-                  Solar Products
+                  Learn More
                 </Button>
               </div>
-              
-              <div className="bg-white/95 backdrop-blur-md border-2 border-blue-300/50 rounded-3xl p-8 shadow-2xl hover:shadow-blue-300/25 hover:bg-blue-50/95 transition-all duration-300 group transform hover:scale-105 md:col-span-2 lg:col-span-1">
-                <Globe className="w-16 h-16 text-blue-500 mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 drop-shadow-lg" />
-                <Button 
-                  size="lg" 
-                  className="w-full bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-bold py-4 text-xl rounded-2xl shadow-lg border-2 border-blue-300"
-                  onClick={() => scrollToSection('services')}
-                  data-testid="button-our-services"
-                >
-                  Our Services
-                </Button>
+              <div className="mt-12 grid grid-cols-3 gap-8">
+                <div className="text-center bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-lg">
+                  <div className="text-3xl font-bold text-blue-600" data-testid="text-countries-count">30+</div>
+                  <div className="text-gray-700 font-medium">Countries Served</div>
+                </div>
+                <div className="text-center bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-lg">
+                  <div className="text-3xl font-bold text-green-600" data-testid="text-experience-years">15+</div>
+                  <div className="text-gray-700 font-medium">Years Experience</div>
+                </div>
+                <div className="text-center bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-lg">
+                  <div className="text-3xl font-bold text-orange-600" data-testid="text-projects-count">1000+</div>
+                  <div className="text-gray-700 font-medium">Projects Completed</div>
+                </div>
               </div>
             </div>
-            
-            {/* Stats with Sunny Theme */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="bg-white/90 backdrop-blur-sm border-2 border-yellow-200 rounded-2xl p-8 text-center shadow-xl hover:shadow-yellow-200/50 transition-all duration-300">
-                <div className="text-5xl font-bold text-yellow-600 mb-3 drop-shadow-sm" data-testid="text-countries-count">30+</div>
-                <div className="text-gray-700 font-semibold text-lg">Countries Served</div>
-              </div>
-              <div className="bg-white/90 backdrop-blur-sm border-2 border-green-200 rounded-2xl p-8 text-center shadow-xl hover:shadow-green-200/50 transition-all duration-300">
-                <div className="text-5xl font-bold text-green-600 mb-3 drop-shadow-sm" data-testid="text-experience-years">15+</div>
-                <div className="text-gray-700 font-semibold text-lg">Years Experience</div>
-              </div>
-              <div className="bg-white/90 backdrop-blur-sm border-2 border-blue-200 rounded-2xl p-8 text-center shadow-xl hover:shadow-blue-200/50 transition-all duration-300">
-                <div className="text-5xl font-bold text-blue-600 mb-3 drop-shadow-sm" data-testid="text-projects-count">1000+</div>
-                <div className="text-gray-700 font-semibold text-lg">Projects Completed</div>
-              </div>
+            <div className="animate-float">
+              <img 
+                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                alt="Modern solar panels installation" 
+                className="rounded-2xl shadow-2xl w-full h-auto"
+                data-testid="img-hero-solar"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gradient-to-r from-yellow-50 via-green-50 to-blue-50">
+      <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">About Shengze Group</h2>
@@ -194,7 +167,7 @@ export default function Home() {
       </section>
 
       {/* Solar Energy Section */}
-      <section id="solar" className="py-20 bg-gradient-to-br from-white via-yellow-50 to-green-50">
+      <section id="solar" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Solar & Renewable Energy Solutions</h2>
@@ -204,12 +177,12 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <Card className="card-hover shadow-xl border-2 border-yellow-200 bg-gradient-to-br from-yellow-50 to-white hover:shadow-yellow-300/30">
+            <Card className="card-hover shadow-xl border-0 bg-gradient-to-br from-white to-blue-50">
               <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl flex items-center justify-center mb-4 shadow-lg">
                   <CloudSun className="text-white h-8 w-8" />
                 </div>
-                <CardTitle className="text-xl text-yellow-700">Solar Panels</CardTitle>
+                <CardTitle className="text-xl text-blue-700">Solar Panels</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">Leading brands including Jinko, LONGi, and JA Solar for residential, commercial, and industrial use.</p>
@@ -221,9 +194,9 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="card-hover shadow-xl border-2 border-green-200 bg-gradient-to-br from-green-50 to-white hover:shadow-green-300/30">
+            <Card className="card-hover shadow-xl border-0 bg-gradient-to-br from-white to-green-50">
               <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-500 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 shadow-lg">
                   <Battery className="text-white h-8 w-8" />
                 </div>
                 <CardTitle className="text-xl text-green-700">Energy Storage</CardTitle>
@@ -238,12 +211,12 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="card-hover shadow-xl border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-white hover:shadow-blue-300/30">
+            <Card className="card-hover shadow-xl border-0 bg-gradient-to-br from-white to-orange-50">
               <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-500 rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-4 shadow-lg">
                   <Cpu className="text-white h-8 w-8" />
                 </div>
-                <CardTitle className="text-xl text-blue-700">Inverters & Systems</CardTitle>
+                <CardTitle className="text-xl text-orange-700">Inverters & Systems</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">High-efficiency inverters and complete renewable energy systems with smart monitoring.</p>
@@ -277,7 +250,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gradient-to-l from-blue-50 via-white to-green-50">
+      <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Comprehensive Services</h2>
