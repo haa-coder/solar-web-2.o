@@ -50,86 +50,88 @@ export default function Home() {
       <Navigation />
       
       {/* Hero Section */}
-      <section id="home" className="pt-16 gradient-bg text-white min-h-screen flex items-center">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-slide-up">
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                  <Button 
-                    size="lg" 
-                    className="w-full bg-blue-600 text-white hover:bg-blue-700 px-6 py-4 text-lg font-semibold"
-                    onClick={() => scrollToSection('calculator')}
-                    data-testid="button-solar-quote"
-                  >
-                    Get Solar Quote
-                  </Button>
-                </div>
-                
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                  <Button 
-                    size="lg" 
-                    className="w-full bg-green-600 text-white hover:bg-green-700 px-6 py-4 text-lg font-semibold"
-                    onClick={() => scrollToSection('about')}
-                    data-testid="button-learn-more"
-                  >
-                    Learn More
-                  </Button>
-                </div>
-                
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                  <Button 
-                    size="lg" 
-                    className="w-full bg-orange-600 text-white hover:bg-orange-700 px-6 py-4 text-lg font-semibold"
-                    onClick={() => scrollToSection('services')}
-                    data-testid="button-our-services"
-                  >
-                    Our Services
-                  </Button>
-                </div>
-                
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                  <Button 
-                    size="lg" 
-                    className="w-full bg-purple-600 text-white hover:bg-purple-700 px-6 py-4 text-lg font-semibold"
-                    onClick={() => scrollToSection('solar')}
-                    data-testid="button-solar-products"
-                  >
-                    Solar Products
-                  </Button>
-                </div>
-                
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                  <Button 
-                    size="lg" 
-                    className="w-full bg-teal-600 text-white hover:bg-teal-700 px-6 py-4 text-lg font-semibold"
-                    onClick={() => scrollToSection('contact')}
-                    data-testid="button-contact-us"
-                  >
-                    Contact Us
-                  </Button>
-                </div>
-                
-                <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                  <Button 
-                    size="lg" 
-                    className="w-full bg-red-600 text-white hover:bg-red-700 px-6 py-4 text-lg font-semibold"
-                    onClick={() => scrollToSection('about')}
-                    data-testid="button-global-reach"
-                  >
-                    Global Reach
-                  </Button>
-                </div>
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-900 via-blue-700 to-green-600">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48Y2lyY2xlIGN4PSIzMCIgY3k9IjMwIiByPSIyIi8+PC9nPjwvZz48L3N2Zz4=')] opacity-30"></div>
+        
+        <div className="relative z-10 container mx-auto px-4 text-center">
+          {/* Main Hero Content */}
+          <div className="max-w-6xl mx-auto">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+              Powering a <span className="text-yellow-300">Greener</span> World
+            </h1>
+            <p className="text-xl md:text-2xl text-blue-100 mb-12 max-w-3xl mx-auto leading-relaxed">
+              Leading the renewable energy revolution with innovative solar solutions and sustainable technologies since 2007
+            </p>
+            
+            {/* Action Buttons in Boxes */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-2xl hover:bg-white/15 transition-all duration-300 group">
+                <CloudSun className="w-12 h-12 text-yellow-300 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+                <Button 
+                  size="lg" 
+                  className="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold py-3 rounded-xl shadow-lg"
+                  onClick={() => scrollToSection('calculator')}
+                  data-testid="button-solar-quote"
+                >
+                  Get Solar Quote
+                </Button>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-2xl hover:bg-white/15 transition-all duration-300 group">
+                <Battery className="w-12 h-12 text-green-300 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+                <Button 
+                  size="lg" 
+                  className="w-full bg-green-500 hover:bg-green-400 text-white font-semibold py-3 rounded-xl shadow-lg"
+                  onClick={() => scrollToSection('solar')}
+                  data-testid="button-solar-products"
+                >
+                  Solar Products
+                </Button>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-2xl hover:bg-white/15 transition-all duration-300 group">
+                <Globe className="w-12 h-12 text-blue-300 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300" />
+                <Button 
+                  size="lg" 
+                  className="w-full bg-blue-500 hover:bg-blue-400 text-white font-semibold py-3 rounded-xl shadow-lg"
+                  onClick={() => scrollToSection('services')}
+                  data-testid="button-our-services"
+                >
+                  Our Services
+                </Button>
               </div>
             </div>
-            <div className="animate-float">
-              <img 
-                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-                alt="Modern solar panels installation" 
-                className="rounded-2xl shadow-2xl w-full h-auto"
-                data-testid="img-hero-solar"
-              />
+            
+            {/* Stats */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+                <div className="text-4xl font-bold text-yellow-300 mb-2" data-testid="text-countries-count">30+</div>
+                <div className="text-blue-100">Countries Served</div>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+                <div className="text-4xl font-bold text-green-300 mb-2" data-testid="text-experience-years">15+</div>
+                <div className="text-blue-100">Years Experience</div>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center">
+                <div className="text-4xl font-bold text-orange-300 mb-2" data-testid="text-projects-count">1000+</div>
+                <div className="text-blue-100">Projects Completed</div>
+              </div>
             </div>
+          </div>
+        </div>
+        
+        {/* Floating Solar Panel Image */}
+        <div className="absolute bottom-8 right-8 hidden lg:block">
+          <div className="relative">
+            <img 
+              src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300" 
+              alt="Modern solar panels installation" 
+              className="rounded-xl shadow-2xl w-80 h-60 object-cover border-2 border-white/20 animate-float"
+              data-testid="img-hero-solar"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl"></div>
           </div>
         </div>
       </section>
