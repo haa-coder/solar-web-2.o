@@ -372,28 +372,28 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-8 text-gray-900 drop-shadow-lg">Contact Information</h3>
                 
                 <div className="grid md:grid-cols-3 gap-8">
-                  <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30">
-                    <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                      <MapPin className="text-white h-8 w-8" />
+                  <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8 border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 min-h-[200px] flex flex-col justify-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                      <MapPin className="text-white h-10 w-10" />
                     </div>
-                    <h4 className="font-bold mb-3 text-gray-900 text-lg">Headquarters</h4>
-                    <p className="text-gray-700 leading-relaxed">Bao'an District<br />Shenzhen, Guangdong Province<br />China</p>
+                    <h4 className="font-bold mb-4 text-gray-900 text-xl text-center">Headquarters</h4>
+                    <p className="text-gray-700 leading-relaxed text-center">Bao'an District<br />Shenzhen, Guangdong Province<br />China</p>
                   </div>
                   
-                  <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30">
-                    <div className="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                      <Mail className="text-white h-8 w-8" />
+                  <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8 border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 min-h-[200px] flex flex-col justify-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-green-600 to-green-700 rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                      <Mail className="text-white h-10 w-10" />
                     </div>
-                    <h4 className="font-bold mb-3 text-gray-900 text-lg">Email</h4>
-                    <p className="text-gray-700 leading-relaxed">info@shengzegroup.com<br />sales@shengzegroup.com</p>
+                    <h4 className="font-bold mb-4 text-gray-900 text-xl text-center">Email</h4>
+                    <p className="text-gray-700 leading-relaxed text-center">info@shengzegroup.com<br />sales@shengzegroup.com</p>
                   </div>
                   
-                  <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30">
-                    <div className="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                      <Phone className="text-white h-8 w-8" />
+                  <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8 border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 min-h-[200px] flex flex-col justify-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-orange-600 to-orange-700 rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                      <Phone className="text-white h-10 w-10" />
                     </div>
-                    <h4 className="font-bold mb-3 text-gray-900 text-lg">Phone</h4>
-                    <p className="text-gray-700 leading-relaxed">+86 400 123 4567<br />+86 755 8888 9999</p>
+                    <h4 className="font-bold mb-4 text-gray-900 text-xl text-center">Phone</h4>
+                    <p className="text-gray-700 leading-relaxed text-center">+86 400 123 4567<br />+86 755 8888 9999</p>
                   </div>
                 </div>
               </div>
@@ -402,25 +402,25 @@ export default function Home() {
 
           {/* Business Hours & Additional Info */}
           <div className="mt-16 grid md:grid-cols-3 gap-8 text-center">
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30">
-              <div className="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Clock className="h-8 w-8 text-white" />
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8 border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 min-h-[200px] flex flex-col justify-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-purple-600 to-purple-700 rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Clock className="h-10 w-10 text-white" />
               </div>
-              <h4 className="font-bold mb-3 text-gray-900 text-lg">Business Hours</h4>
+              <h4 className="font-bold mb-4 text-gray-900 text-xl">Business Hours</h4>
               <p className="text-gray-700 leading-relaxed">Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday: 9:00 AM - 3:00 PM</p>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30">
-              <div className="w-16 h-16 bg-teal-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <MessageCircle className="h-8 w-8 text-white" />
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8 border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 min-h-[200px] flex flex-col justify-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-teal-600 to-teal-700 rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <MessageCircle className="h-10 w-10 text-white" />
               </div>
-              <h4 className="font-bold mb-3 text-gray-900 text-lg">Response Time</h4>
+              <h4 className="font-bold mb-4 text-gray-900 text-xl">Response Time</h4>
               <p className="text-gray-700 leading-relaxed">We typically respond within<br />24 hours on business days</p>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-white/30">
-              <div className="w-16 h-16 bg-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Languages className="h-8 w-8 text-white" />
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl p-8 border border-white/30 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 min-h-[200px] flex flex-col justify-center">
+              <div className="w-20 h-20 bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Languages className="h-10 w-10 text-white" />
               </div>
-              <h4 className="font-bold mb-3 text-gray-900 text-lg">Languages</h4>
+              <h4 className="font-bold mb-4 text-gray-900 text-xl">Languages</h4>
               <p className="text-gray-700 leading-relaxed">English, Chinese (Mandarin)<br />Arabic, Spanish</p>
             </div>
           </div>
