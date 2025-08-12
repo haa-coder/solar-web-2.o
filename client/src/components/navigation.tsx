@@ -35,13 +35,13 @@ export default function Navigation() {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm' : 'bg-white/95 backdrop-blur-sm'
+      isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg border-b-2 border-yellow-200' : 'bg-white/95 backdrop-blur-sm border-b-2 border-yellow-200'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <CloudSun className="h-8 w-8 text-blue-600" />
-            <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">Shengze Group</span>
+            <CloudSun className="h-8 w-8 text-yellow-500" />
+            <span className="text-xl font-bold bg-gradient-to-r from-yellow-600 via-green-600 to-blue-600 bg-clip-text text-transparent">Shengze Group</span>
           </div>
           
           {/* Desktop Navigation */}
@@ -50,7 +50,7 @@ export default function Navigation() {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                className="text-gray-700 hover:text-yellow-600 transition-colors font-medium"
                 data-testid={`nav-${link.id}`}
               >
                 {link.label}
@@ -71,7 +71,7 @@ export default function Navigation() {
                   <button
                     key={link.id}
                     onClick={() => scrollToSection(link.id)}
-                    className="text-left text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                    className="text-left text-lg font-medium text-gray-700 hover:text-yellow-600 transition-colors"
                     data-testid={`mobile-nav-${link.id}`}
                   >
                     {link.label}
