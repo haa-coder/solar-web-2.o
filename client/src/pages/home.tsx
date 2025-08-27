@@ -2,6 +2,9 @@ import Navigation from "@/components/navigation";
 import SolarCalculator from "@/components/solar-calculator";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import solarPanelsImage from "@assets/generated_images/Professional_solar_panels_edf5d35d.png";
+import energyStorageImage from "@assets/generated_images/Energy_storage_batteries_673e7a0c.png";
+import inverterSystemsImage from "@assets/generated_images/Solar_inverter_systems_36983463.png";
 import { 
   CloudSun, 
   Battery, 
@@ -182,7 +185,7 @@ export default function Home() {
               <CardHeader>
                 <div className="w-full h-48 mb-4 rounded-xl overflow-hidden bg-blue-100">
                   <img 
-                    src="@assets/generated_images/Professional_solar_panels_edf5d35d.png" 
+                    src={solarPanelsImage} 
                     alt="Modern solar panel array installation" 
                     className="w-full h-full object-cover"
                     data-testid="img-solar-panels"
@@ -207,7 +210,7 @@ export default function Home() {
               <CardHeader>
                 <div className="w-full h-48 mb-4 rounded-xl overflow-hidden bg-green-100">
                   <img 
-                    src="@assets/generated_images/Energy_storage_batteries_673e7a0c.png" 
+                    src={energyStorageImage} 
                     alt="Solar battery energy storage system" 
                     className="w-full h-full object-cover"
                     data-testid="img-energy-storage"
@@ -232,7 +235,7 @@ export default function Home() {
               <CardHeader>
                 <div className="w-full h-48 mb-4 rounded-xl overflow-hidden bg-orange-100">
                   <img 
-                    src="@assets/generated_images/Solar_inverter_systems_36983463.png" 
+                    src={inverterSystemsImage} 
                     alt="Solar inverter and monitoring systems" 
                     className="w-full h-full object-cover"
                     data-testid="img-inverters-systems"
