@@ -70,7 +70,7 @@ export default function Home() {
                   onClick={() => scrollToSection('calculator')}
                   data-testid="button-solar-quote"
                 >
-                  Get Solar Quote
+                  Solar Calculator
                 </Button>
                 <Button 
                   size="lg" 
