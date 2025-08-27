@@ -52,7 +52,6 @@ export default function Home() {
   return (
     <div className="bg-gray-50 text-gray-900">
       <Navigation />
-      
       {/* Hero Section */}
       <section id="home" className="pt-16 gradient-bg text-white min-h-screen flex items-center">
         <div className="container mx-auto px-4">
@@ -61,7 +60,7 @@ export default function Home() {
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
                 Powering a <span className="text-green-400">Greener</span> World
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-white/90 font-medium drop-shadow-md">
+              <p className="text-xl md:text-2xl mb-8 font-medium drop-shadow-md text-[#4b5563]">
                 Leading the renewable energy revolution with innovative solar solutions and sustainable technologies since 2007.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -109,7 +108,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* About Section */}
       <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -169,7 +167,6 @@ export default function Home() {
           </Card>
         </div>
       </section>
-
       {/* Solar Energy Section */}
       <section id="solar" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -276,7 +273,6 @@ export default function Home() {
           </Card>
         </div>
       </section>
-
       {/* Services Section */}
       <section id="services" className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -368,7 +364,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Solar Calculator Section */}
       <section id="calculator" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -382,7 +377,6 @@ export default function Home() {
           <SolarCalculator />
         </div>
       </section>
-
       {/* Contact Section */}
       <section id="contact" className="py-20 gradient-bg text-white">
         <div className="container mx-auto px-4">
@@ -457,7 +451,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
