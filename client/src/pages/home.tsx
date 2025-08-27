@@ -182,17 +182,10 @@ export default function Home() {
               <CardHeader>
                 <div className="w-full h-48 mb-4 rounded-xl overflow-hidden bg-blue-100">
                   <img 
-                    src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&h=600" 
+                    src="https://source.unsplash.com/800x600/?solar,panels,energy" 
                     alt="Modern solar panel array installation" 
                     className="w-full h-full object-cover"
                     data-testid="img-solar-panels"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      const parent = e.currentTarget.parentElement;
-                      if (parent) {
-                        parent.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-blue-200 to-blue-400 flex items-center justify-center"><span class="text-blue-800 font-semibold">Solar Panels</span></div>';
-                      }
-                    }}
                   />
                 </div>
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl flex items-center justify-center mb-4">
@@ -212,12 +205,13 @@ export default function Home() {
 
             <Card className="card-hover border-0 bg-gradient-to-br from-white to-green-50">
               <CardHeader>
-                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
-                  <div className="text-center">
-                    <Battery className="h-16 w-16 text-white mx-auto mb-2" />
-                    <p className="text-white font-bold text-lg">Energy Storage Systems</p>
-                    <p className="text-green-100 text-sm">Battery Technology</p>
-                  </div>
+                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden bg-green-100">
+                  <img 
+                    src="https://source.unsplash.com/800x600/?battery,energy,storage" 
+                    alt="Solar battery energy storage system" 
+                    className="w-full h-full object-cover"
+                    data-testid="img-energy-storage"
+                  />
                 </div>
                 <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
                   <Battery className="text-white h-8 w-8" />
@@ -238,17 +232,10 @@ export default function Home() {
               <CardHeader>
                 <div className="w-full h-48 mb-4 rounded-xl overflow-hidden bg-orange-100">
                   <img 
-                    src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&h=600" 
+                    src="https://source.unsplash.com/800x600/?inverter,solar,technology" 
                     alt="Solar inverter and monitoring systems" 
                     className="w-full h-full object-cover"
                     data-testid="img-inverters-systems"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      const parent = e.currentTarget.parentElement;
-                      if (parent) {
-                        parent.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-orange-200 to-orange-400 flex items-center justify-center"><span class="text-orange-800 font-semibold">Inverters & Systems</span></div>';
-                      }
-                    }}
                   />
                 </div>
                 <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-4">
