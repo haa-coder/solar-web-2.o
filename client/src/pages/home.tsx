@@ -66,7 +66,8 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-white text-blue-600 hover:bg-blue-50 hover:text-blue-700 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200 shadow-lg"
+                  variant="outline"
+                  className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200"
                   onClick={() => scrollToSection('calculator')}
                   data-testid="button-solar-quote"
                 >
