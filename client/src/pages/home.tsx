@@ -21,7 +21,7 @@ import {
   Twitter,
   Facebook
 } from "lucide-react";
-import energyStorageImage from "@assets/targeted_element_1756293140566.png";
+
 
 export default function Home() {
   const scrollToSection = (sectionId: string) => {
@@ -212,20 +212,12 @@ export default function Home() {
 
             <Card className="card-hover border-0 bg-gradient-to-br from-white to-green-50">
               <CardHeader>
-                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden bg-green-100">
-                  <img 
-                    src={energyStorageImage} 
-                    alt="Solar battery energy storage system" 
-                    className="w-full h-full object-cover"
-                    data-testid="img-energy-storage"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      const parent = e.currentTarget.parentElement;
-                      if (parent) {
-                        parent.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-green-200 to-green-400 flex items-center justify-center"><span class="text-green-800 font-semibold">Energy Storage</span></div>';
-                      }
-                    }}
-                  />
+                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                  <div className="text-center">
+                    <Battery className="h-16 w-16 text-white mx-auto mb-2" />
+                    <p className="text-white font-bold text-lg">Energy Storage Systems</p>
+                    <p className="text-green-100 text-sm">Battery Technology</p>
+                  </div>
                 </div>
                 <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
                   <Battery className="text-white h-8 w-8" />
