@@ -57,7 +57,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg text-[#4b5563]">
                 Powering a <span className="text-green-400">Greener</span> World
               </h1>
               <p className="text-xl md:text-2xl mb-8 font-medium drop-shadow-md text-[#4b5563]">
