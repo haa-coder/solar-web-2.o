@@ -179,12 +179,19 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <Card className="card-hover border-0 bg-gradient-to-br from-white to-blue-50">
               <CardHeader>
-                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden">
+                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden bg-blue-100">
                   <img 
-                    src="https://images.unsplash.com/photo-1588665343610-f4bbdbaa8d66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600" 
+                    src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=800&h=600" 
                     alt="Modern solar panel array installation" 
                     className="w-full h-full object-cover"
                     data-testid="img-solar-panels"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      const parent = e.currentTarget.parentElement;
+                      if (parent) {
+                        parent.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-blue-200 to-blue-400 flex items-center justify-center"><span class="text-blue-800 font-semibold">Solar Panels</span></div>';
+                      }
+                    }}
                   />
                 </div>
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl flex items-center justify-center mb-4">
@@ -204,12 +211,19 @@ export default function Home() {
 
             <Card className="card-hover border-0 bg-gradient-to-br from-white to-green-50">
               <CardHeader>
-                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden">
+                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden bg-green-100">
                   <img 
-                    src="https://images.unsplash.com/photo-1609220464264-2ec33e47ec10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600" 
+                    src="https://images.unsplash.com/photo-1614853316476-de00d14cb1fc?auto=format&fit=crop&w=800&h=600" 
                     alt="Solar battery energy storage system" 
                     className="w-full h-full object-cover"
                     data-testid="img-energy-storage"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      const parent = e.currentTarget.parentElement;
+                      if (parent) {
+                        parent.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-green-200 to-green-400 flex items-center justify-center"><span class="text-green-800 font-semibold">Energy Storage</span></div>';
+                      }
+                    }}
                   />
                 </div>
                 <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
@@ -229,12 +243,19 @@ export default function Home() {
 
             <Card className="card-hover border-0 bg-gradient-to-br from-white to-orange-50">
               <CardHeader>
-                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden">
+                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden bg-orange-100">
                   <img 
-                    src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600" 
+                    src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&h=600" 
                     alt="Solar inverter and monitoring systems" 
                     className="w-full h-full object-cover"
                     data-testid="img-inverters-systems"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      const parent = e.currentTarget.parentElement;
+                      if (parent) {
+                        parent.innerHTML = '<div class="w-full h-full bg-gradient-to-br from-orange-200 to-orange-400 flex items-center justify-center"><span class="text-orange-800 font-semibold">Inverters & Systems</span></div>';
+                      }
+                    }}
                   />
                 </div>
                 <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-4">
