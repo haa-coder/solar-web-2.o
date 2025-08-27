@@ -65,9 +65,8 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200"
+                  size="lg"
+                  className="bg-blue-600 text-white hover:bg-blue-700 border-2 border-blue-600 hover:border-blue-700 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200 shadow-lg"
                   onClick={() => scrollToSection('calculator')}
                   data-testid="button-solar-quote"
                 >
@@ -76,7 +75,7 @@ export default function Home() {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200"
+                  className="border-2 border-blue-600 bg-transparent text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200"
                   onClick={() => scrollToSection('about')}
                   data-testid="button-learn-more"
                 >
