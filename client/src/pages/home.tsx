@@ -181,8 +181,8 @@ export default function Home() {
               <CardHeader>
                 <div className="w-full h-48 mb-4 rounded-xl overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600" 
-                    alt="High-efficiency solar panels installation" 
+                    src="https://images.unsplash.com/photo-1588665343610-f4bbdbaa8d66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600" 
+                    alt="Modern solar panel array installation" 
                     className="w-full h-full object-cover"
                     data-testid="img-solar-panels"
                   />
@@ -206,8 +206,8 @@ export default function Home() {
               <CardHeader>
                 <div className="w-full h-48 mb-4 rounded-xl overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1593941707882-a5bac6861d75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600" 
-                    alt="Advanced energy storage battery systems" 
+                    src="https://images.unsplash.com/photo-1609220464264-2ec33e47ec10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600" 
+                    alt="Solar battery energy storage system" 
                     className="w-full h-full object-cover"
                     data-testid="img-energy-storage"
                   />
@@ -229,6 +229,14 @@ export default function Home() {
 
             <Card className="card-hover border-0 bg-gradient-to-br from-white to-orange-50">
               <CardHeader>
+                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600" 
+                    alt="Solar inverter and monitoring systems" 
+                    className="w-full h-full object-cover"
+                    data-testid="img-inverters-systems"
+                  />
+                </div>
                 <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-4">
                   <Cpu className="text-white h-8 w-8" />
                 </div>
