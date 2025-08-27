@@ -179,6 +179,14 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <Card className="card-hover border-0 bg-gradient-to-br from-white to-blue-50">
               <CardHeader>
+                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600" 
+                    alt="High-efficiency solar panels installation" 
+                    className="w-full h-full object-cover"
+                    data-testid="img-solar-panels"
+                  />
+                </div>
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-green-500 rounded-xl flex items-center justify-center mb-4">
                   <CloudSun className="text-white h-8 w-8" />
                 </div>
@@ -196,6 +204,14 @@ export default function Home() {
 
             <Card className="card-hover border-0 bg-gradient-to-br from-white to-green-50">
               <CardHeader>
+                <div className="w-full h-48 mb-4 rounded-xl overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1593941707882-a5bac6861d75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&h=600" 
+                    alt="Advanced energy storage battery systems" 
+                    className="w-full h-full object-cover"
+                    data-testid="img-energy-storage"
+                  />
+                </div>
                 <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
                   <Battery className="text-white h-8 w-8" />
                 </div>
