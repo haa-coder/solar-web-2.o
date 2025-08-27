@@ -213,7 +213,7 @@ export default function Home() {
               <CardHeader>
                 <div className="w-full h-48 mb-4 rounded-xl overflow-hidden bg-green-100">
                   <img 
-                    src="https://images.unsplash.com/photo-1614853316476-de00d14cb1fc?auto=format&fit=crop&w=800&h=600" 
+                    src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?auto=format&fit=crop&w=800&h=600" 
                     alt="Solar battery energy storage system" 
                     className="w-full h-full object-cover"
                     data-testid="img-energy-storage"
