@@ -58,16 +58,16 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-gray-900 drop-shadow-lg">
-                Powering a <span className="text-green-600">Greener</span> World
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-lg">
+                Powering a <span className="text-yellow-400">Greener</span> World
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-800 font-medium drop-shadow-md">
+              <p className="text-xl md:text-2xl mb-8 text-white/90 font-medium drop-shadow-md">
                 Leading the renewable energy revolution with innovative solar solutions and sustainable technologies since 2007.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  className="bg-white text-blue-600 hover:bg-yellow-50 hover:text-blue-700 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200"
+                  className="bg-yellow-400 text-blue-900 hover:bg-yellow-300 hover:text-blue-800 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200 shadow-lg"
                   onClick={() => scrollToSection('calculator')}
                   data-testid="button-solar-quote"
                 >
@@ -76,7 +76,7 @@ export default function Home() {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-2 border-white bg-white text-gray-900 hover:bg-white/20 hover:border-yellow-400 hover:text-yellow-400 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200"
+                  className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-blue-900 px-8 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200"
                   onClick={() => scrollToSection('about')}
                   data-testid="button-learn-more"
                 >
